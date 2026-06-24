@@ -51,6 +51,7 @@ backups/
 .dev/
 
 # Claude Code local settings and AI agent instructions are in private_files
+.claude/worktrees/
 
 # Build artifacts
 *.zip

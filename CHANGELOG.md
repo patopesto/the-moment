@@ -5,6 +5,13 @@ All notable changes to The Moment will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.1] — 2026-06-23
+
+### Fixed
+
+- PrusaLink API shape monitor: eliminate false-positive alerts during normal state transitions (idle→printing, cancelled, etc.) by diffing against a declared schema rather than a baseline snapshot — contributed by [@patopesto](https://github.com/patopesto) (Alban Moreon, PR #2)
+- `github-push` / `github-push-check`: build forward from `origin/main` instead of orphan commit, preserving contributor commit history; stash pop failures now abort loudly instead of silently losing changes
+
 ## [v1.1.0] — 2026-06-15
 
 ### Added
